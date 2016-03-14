@@ -1,0 +1,12 @@
+{application, rest_influxdb,
+ [
+  {description, ""},
+  {vsn, "1"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, { rest_influxdb_app, []}},
+  {env, []}
+ ]}.

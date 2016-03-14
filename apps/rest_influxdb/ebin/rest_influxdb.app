@@ -1,0 +1,9 @@
+{application,rest_influxdb,
+             [{description,[]},
+              {vsn,"1"},
+              {registered,[]},
+              {applications,[kernel,stdlib]},
+              {mod,{rest_influxdb_app,[]}},
+              {env,[]},
+              {modules,[influxdb_writer,rest_handler,rest_influxdb_app,
+                        rest_influxdb_sup]}]}.

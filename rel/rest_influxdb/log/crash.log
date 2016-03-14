@@ -1,0 +1,504 @@
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server <0.1445.0> terminating 
+** Last message in was {write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}
+** When Server state == {state,#Port<0.3890>,80891,{127,0,0,1},{ok,59407},true}
+** Reason for termination == 
+** {function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp_worker:init/1
+    pid: <0.1445.0>
+    registered_name: []
+    exception exit: {{function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1440.0>,default,influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1439.0>,<0.1440.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1001
+  neighbours:
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {<0.1440.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+     Offender:   [{pid,<0.1445.0>},{id,influx_udp_worker},{mfargs,{influx_udp_worker,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server <0.1327.0> terminating 
+** Last message in was {send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}
+** When Server state == {state,#{host => '127.0.0.1',max_overflow => 10,pool_size => 5,port => 80891}}
+** Reason for termination == 
+** {{{function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1445.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{poolboy,transaction,3,[{file,"src/poolboy.erl"},{line,76}]},{influx_udp,handle_call,3,[{file,"src/influx_udp.erl"},{line,195}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp:init_server/0
+    pid: <0.1327.0>
+    registered_name: influx_udp
+    exception exit: {{{function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1445.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1326.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 453
+  neighbours:
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server influxdb_writer terminating 
+** Last message in was {'$gen_cast',{write_to_db,[[{<<"name">>,<<"test">>},{<<"value">>,23}],[{<<"name">>,<<"test1">>},{<<"value">>,57}]]}}
+** When Server state == {state}
+** Reason for termination == 
+** {{{{function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1445.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{influxdb_writer,handle_cast,2,[{file,"src/influxdb_writer.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influxdb_writer:init/1
+    pid: <0.1434.0>
+    registered_name: influxdb_writer
+    exception exit: {{{{function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1445.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [rest_influxdb_sup,<0.1277.0>]
+    messages: []
+    links: [<0.1433.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 254
+  neighbours:
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {local,rest_influxdb_sup}
+     Context:    child_terminated
+     Reason:     {{{function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1445.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}}
+     Offender:   [{pid,<0.1434.0>},{id,influxdb_writer},{mfargs,{influxdb_writer,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,worker}]
+
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {local,influx_udp_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{inet_udp,send,[#Port<0.3890>,{127,0,0,1},80891,<<"test1 val=57 1457888183509000000\ntest val=23 1457888183509000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1445.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}}
+     Offender:   [{pid,<0.1327.0>},{id,influx_udp},{mfargs,{influx_udp,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server <0.1448.0> terminating 
+** Last message in was {write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}
+** When Server state == {state,#Port<0.3892>,80891,{127,0,0,1},{ok,62947},true}
+** Reason for termination == 
+** {function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp_worker:init/1
+    pid: <0.1448.0>
+    registered_name: []
+    exception exit: {{function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1440.0>,default,influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1439.0>,<0.1440.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1001
+  neighbours:
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {<0.1440.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+     Offender:   [{pid,<0.1448.0>},{id,influx_udp_worker},{mfargs,{influx_udp_worker,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server <0.1449.0> terminating 
+** Last message in was {send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}
+** When Server state == {state,#{host => '127.0.0.1',max_overflow => 10,pool_size => 5,port => 80891}}
+** Reason for termination == 
+** {{{function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1448.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{poolboy,transaction,3,[{file,"src/poolboy.erl"},{line,76}]},{influx_udp,handle_call,3,[{file,"src/influx_udp.erl"},{line,195}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp:init_server/0
+    pid: <0.1449.0>
+    registered_name: influx_udp
+    exception exit: {{{function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1448.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1326.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 355
+  neighbours:
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server influxdb_writer terminating 
+** Last message in was {'$gen_cast',{write_to_db,[[{<<"name">>,<<"test">>},{<<"value">>,23}],[{<<"name">>,<<"test1">>},{<<"value">>,57}]]}}
+** When Server state == {state}
+** Reason for termination == 
+** {{{{function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1448.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{influxdb_writer,handle_cast,2,[{file,"src/influxdb_writer.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influxdb_writer:init/1
+    pid: <0.1447.0>
+    registered_name: influxdb_writer
+    exception exit: {{{{function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1448.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [rest_influxdb_sup,<0.1277.0>]
+    messages: []
+    links: [<0.1433.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 246
+  neighbours:
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {local,influx_udp_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1448.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}}
+     Offender:   [{pid,<0.1449.0>},{id,influx_udp},{mfargs,{influx_udp,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {local,rest_influxdb_sup}
+     Context:    child_terminated
+     Reason:     {{{function_clause,[{inet_udp,send,[#Port<0.3892>,{127,0,0,1},80891,<<"test1 val=57 1457888183673000000\ntest val=23 1457888183673000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1448.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}}
+     Offender:   [{pid,<0.1447.0>},{id,influxdb_writer},{mfargs,{influxdb_writer,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,worker}]
+
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server <0.1450.0> terminating 
+** Last message in was {write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}
+** When Server state == {state,#Port<0.3893>,80891,{127,0,0,1},{ok,53918},true}
+** Reason for termination == 
+** {function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp_worker:init/1
+    pid: <0.1450.0>
+    registered_name: []
+    exception exit: {{function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1440.0>,default,influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1439.0>,<0.1440.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1001
+  neighbours:
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {<0.1440.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+     Offender:   [{pid,<0.1450.0>},{id,influx_udp_worker},{mfargs,{influx_udp_worker,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server <0.1451.0> terminating 
+** Last message in was {send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}
+** When Server state == {state,#{host => '127.0.0.1',max_overflow => 10,pool_size => 5,port => 80891}}
+** Reason for termination == 
+** {{{function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1450.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{poolboy,transaction,3,[{file,"src/poolboy.erl"},{line,76}]},{influx_udp,handle_call,3,[{file,"src/influx_udp.erl"},{line,195}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp:init_server/0
+    pid: <0.1451.0>
+    registered_name: influx_udp
+    exception exit: {{{function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1450.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1326.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 363
+  neighbours:
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {local,influx_udp_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1450.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}}
+     Offender:   [{pid,<0.1451.0>},{id,influx_udp},{mfargs,{influx_udp,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:23 =ERROR REPORT====
+** Generic server influxdb_writer terminating 
+** Last message in was {'$gen_cast',{write_to_db,[[{<<"name">>,<<"test">>},{<<"value">>,23}],[{<<"name">>,<<"test1">>},{<<"value">>,57}]]}}
+** When Server state == {state}
+** Reason for termination == 
+** {{{{function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1450.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{influxdb_writer,handle_cast,2,[{file,"src/influxdb_writer.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:23 =CRASH REPORT====
+  crasher:
+    initial call: influxdb_writer:init/1
+    pid: <0.1452.0>
+    registered_name: influxdb_writer
+    exception exit: {{{{function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1450.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [rest_influxdb_sup,<0.1277.0>]
+    messages: []
+    links: [<0.1433.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 266
+  neighbours:
+2016-03-13 12:56:23 =SUPERVISOR REPORT====
+     Supervisor: {local,rest_influxdb_sup}
+     Context:    child_terminated
+     Reason:     {{{function_clause,[{inet_udp,send,[#Port<0.3893>,{127,0,0,1},80891,<<"test1 val=57 1457888183845000000\ntest val=23 1457888183845000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1450.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}}
+     Offender:   [{pid,<0.1452.0>},{id,influxdb_writer},{mfargs,{influxdb_writer,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,worker}]
+
+2016-03-13 12:56:24 =ERROR REPORT====
+** Generic server <0.1453.0> terminating 
+** Last message in was {write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}
+** When Server state == {state,#Port<0.3894>,80891,{127,0,0,1},{ok,51038},true}
+** Reason for termination == 
+** {function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:24 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp_worker:init/1
+    pid: <0.1453.0>
+    registered_name: []
+    exception exit: {{function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1440.0>,default,influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1439.0>,<0.1440.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1001
+  neighbours:
+2016-03-13 12:56:24 =SUPERVISOR REPORT====
+     Supervisor: {<0.1440.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+     Offender:   [{pid,<0.1453.0>},{id,influx_udp_worker},{mfargs,{influx_udp_worker,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:24 =ERROR REPORT====
+** Generic server <0.1454.0> terminating 
+** Last message in was {send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}
+** When Server state == {state,#{host => '127.0.0.1',max_overflow => 10,pool_size => 5,port => 80891}}
+** Reason for termination == 
+** {{{function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1453.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{poolboy,transaction,3,[{file,"src/poolboy.erl"},{line,76}]},{influx_udp,handle_call,3,[{file,"src/influx_udp.erl"},{line,195}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:24 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp:init_server/0
+    pid: <0.1454.0>
+    registered_name: influx_udp
+    exception exit: {{{function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1453.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1326.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 363
+  neighbours:
+2016-03-13 12:56:24 =SUPERVISOR REPORT====
+     Supervisor: {local,influx_udp_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1453.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}}
+     Offender:   [{pid,<0.1454.0>},{id,influx_udp},{mfargs,{influx_udp,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:24 =ERROR REPORT====
+** Generic server influxdb_writer terminating 
+** Last message in was {'$gen_cast',{write_to_db,[[{<<"name">>,<<"test">>},{<<"value">>,23}],[{<<"name">>,<<"test1">>},{<<"value">>,57}]]}}
+** When Server state == {state}
+** Reason for termination == 
+** {{{{function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1453.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{influxdb_writer,handle_cast,2,[{file,"src/influxdb_writer.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:24 =CRASH REPORT====
+  crasher:
+    initial call: influxdb_writer:init/1
+    pid: <0.1455.0>
+    registered_name: influxdb_writer
+    exception exit: {{{{function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1453.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [rest_influxdb_sup,<0.1277.0>]
+    messages: []
+    links: [<0.1433.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 266
+  neighbours:
+2016-03-13 12:56:24 =SUPERVISOR REPORT====
+     Supervisor: {local,rest_influxdb_sup}
+     Context:    child_terminated
+     Reason:     {{{function_clause,[{inet_udp,send,[#Port<0.3894>,{127,0,0,1},80891,<<"test1 val=57 1457888184011000000\ntest val=23 1457888184011000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1453.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}}
+     Offender:   [{pid,<0.1455.0>},{id,influxdb_writer},{mfargs,{influxdb_writer,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,worker}]
+
+2016-03-13 12:56:24 =ERROR REPORT====
+** Generic server <0.1456.0> terminating 
+** Last message in was {write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}
+** When Server state == {state,#Port<0.3895>,80891,{127,0,0,1},{ok,54174},true}
+** Reason for termination == 
+** {function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:24 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp_worker:init/1
+    pid: <0.1456.0>
+    registered_name: []
+    exception exit: {{function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1440.0>,default,influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1439.0>,<0.1440.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1002
+  neighbours:
+2016-03-13 12:56:24 =ERROR REPORT====
+** Generic server <0.1457.0> terminating 
+** Last message in was {send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}
+** When Server state == {state,#{host => '127.0.0.1',max_overflow => 10,pool_size => 5,port => 80891}}
+** Reason for termination == 
+** {{{function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1456.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{poolboy,transaction,3,[{file,"src/poolboy.erl"},{line,76}]},{influx_udp,handle_call,3,[{file,"src/influx_udp.erl"},{line,195}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:24 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp:init_server/0
+    pid: <0.1457.0>
+    registered_name: influx_udp
+    exception exit: {{{function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1456.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1326.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 359
+  neighbours:
+2016-03-13 12:56:24 =ERROR REPORT====
+** Generic server influxdb_writer terminating 
+** Last message in was {'$gen_cast',{write_to_db,[[{<<"name">>,<<"test">>},{<<"value">>,23}],[{<<"name">>,<<"test1">>},{<<"value">>,57}]]}}
+** When Server state == {state}
+** Reason for termination == 
+** {{{{function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1456.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{influxdb_writer,handle_cast,2,[{file,"src/influxdb_writer.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 12:56:24 =CRASH REPORT====
+  crasher:
+    initial call: influxdb_writer:init/1
+    pid: <0.1458.0>
+    registered_name: influxdb_writer
+    exception exit: {{{{function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1456.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [rest_influxdb_sup,<0.1277.0>]
+    messages: []
+    links: [<0.1433.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 258
+  neighbours:
+2016-03-13 12:56:24 =SUPERVISOR REPORT====
+     Supervisor: {local,rest_influxdb_sup}
+     Context:    child_terminated
+     Reason:     {{{function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1456.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}}
+     Offender:   [{pid,<0.1458.0>},{id,influxdb_writer},{mfargs,{influxdb_writer,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,worker}]
+
+2016-03-13 12:56:24 =SUPERVISOR REPORT====
+     Supervisor: {<0.1440.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+     Offender:   [{pid,<0.1456.0>},{id,influx_udp_worker},{mfargs,{influx_udp_worker,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 12:56:24 =SUPERVISOR REPORT====
+     Supervisor: {local,influx_udp_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{inet_udp,send,[#Port<0.3895>,{127,0,0,1},80891,<<"test1 val=57 1457888184180000000\ntest val=23 1457888184180000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1456.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}}
+     Offender:   [{pid,<0.1457.0>},{id,influx_udp},{mfargs,{influx_udp,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 13:01:10 =ERROR REPORT====
+** Generic server <0.1460.0> terminating 
+** Last message in was {write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}
+** When Server state == {state,#Port<0.3896>,80891,{127,0,0,1},{ok,60741},true}
+** Reason for termination == 
+** {function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 13:01:10 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp_worker:init/1
+    pid: <0.1460.0>
+    registered_name: []
+    exception exit: {{function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [<0.1440.0>,default,influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1439.0>,<0.1440.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 610
+    stack_size: 27
+    reductions: 1001
+  neighbours:
+2016-03-13 13:01:10 =SUPERVISOR REPORT====
+     Supervisor: {<0.1440.0>,poolboy_sup}
+     Context:    child_terminated
+     Reason:     {function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+     Offender:   [{pid,<0.1460.0>},{id,influx_udp_worker},{mfargs,{influx_udp_worker,start_link,undefined}},{restart_type,temporary},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 13:01:10 =ERROR REPORT====
+** Generic server <0.1461.0> terminating 
+** Last message in was {send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}
+** When Server state == {state,#{host => '127.0.0.1',max_overflow => 10,pool_size => 5,port => 80891}}
+** Reason for termination == 
+** {{{function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1460.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{poolboy,transaction,3,[{file,"src/poolboy.erl"},{line,76}]},{influx_udp,handle_call,3,[{file,"src/influx_udp.erl"},{line,195}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 13:01:10 =CRASH REPORT====
+  crasher:
+    initial call: influx_udp:init_server/0
+    pid: <0.1461.0>
+    registered_name: influx_udp
+    exception exit: {{{function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1460.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [influx_udp_sup,<0.1325.0>]
+    messages: []
+    links: [<0.1326.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 359
+  neighbours:
+2016-03-13 13:01:10 =SUPERVISOR REPORT====
+     Supervisor: {local,influx_udp_sup}
+     Context:    child_terminated
+     Reason:     {{function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1460.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}}
+     Offender:   [{pid,<0.1461.0>},{id,influx_udp},{mfargs,{influx_udp,start_link,[]}},{restart_type,permanent},{shutdown,5000},{child_type,worker}]
+
+2016-03-13 13:01:10 =ERROR REPORT====
+** Generic server influxdb_writer terminating 
+** Last message in was {'$gen_cast',{write_to_db,[[{<<"name">>,<<"test">>},{<<"value">>,23}],[{<<"name">>,<<"test1">>},{<<"value">>,57}]]}}
+** When Server state == {state}
+** Reason for termination == 
+** {{{{function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1460.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,call,2,[{file,"gen_server.erl"},{line,204}]},{influxdb_writer,handle_cast,2,[{file,"src/influxdb_writer.erl"},{line,94}]},{gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+2016-03-13 13:01:10 =CRASH REPORT====
+  crasher:
+    initial call: influxdb_writer:init/1
+    pid: <0.1459.0>
+    registered_name: influxdb_writer
+    exception exit: {{{{function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1460.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}},[{gen_server,terminate,7,[{file,"gen_server.erl"},{line,826}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+    ancestors: [rest_influxdb_sup,<0.1277.0>]
+    messages: []
+    links: [<0.1433.0>]
+    dictionary: []
+    trap_exit: false
+    status: running
+    heap_size: 987
+    stack_size: 27
+    reductions: 262
+  neighbours:
+2016-03-13 13:01:10 =SUPERVISOR REPORT====
+     Supervisor: {local,rest_influxdb_sup}
+     Context:    child_terminated
+     Reason:     {{{function_clause,[{inet_udp,send,[#Port<0.3896>,{127,0,0,1},80891,<<"test1 val=57 1457888470722000000\ntest val=23 1457888470722000001\n">>],[{file,"inet_udp.erl"},{line,60}]},{influx_udp_worker,handle_call,3,[{file,"src/influx_udp_worker.erl"},{line,59}]},{gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},{gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},{gen_server,call,[<0.1460.0>,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}]}},{gen_server,call,[influx_udp,{send_to_pool,default,{write,[#{fields => #{val => 57},measurement => "test1"},#{fields => #{val => 23},measurement => "test"}]}}]}}
+     Offender:   [{pid,<0.1459.0>},{id,influxdb_writer},{mfargs,{influxdb_writer,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,worker}]
+
