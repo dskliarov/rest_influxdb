@@ -29,10 +29,7 @@ start_erflux() ->
     application:ensure_started(ssl),
     application:ensure_started(idna),
     application:ensure_started(hackney),
-    application:ensure_started(jsx),
-    application:ensure_started(erflux),
-    erflux_sup:add_erflux(erflux_http),
-    erflux_http:get_databases().
+    application:ensure_started(jsx).
 
 setup_api() ->
     Routes = [
