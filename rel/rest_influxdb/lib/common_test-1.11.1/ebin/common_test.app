@@ -1,4 +1,4 @@
-%% app generated at {2016,3,13} {19,42,51}
+%% app generated at {2016,3,17} {22,26,55}
 {application,common_test,
              [{description,"The OTP Common Test application"},
               {vsn,"1.11.1"},

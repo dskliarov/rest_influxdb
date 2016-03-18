@@ -1,4 +1,4 @@
-%% app generated at {2016,3,13} {19,42,51}
+%% app generated at {2016,3,17} {22,26,55}
 {application,certifi,
              [{description,"An OTP library"},
               {vsn,"0.4.0"},

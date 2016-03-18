@@ -1,4 +1,4 @@
-%% app generated at {2016,3,13} {19,42,52}
+%% app generated at {2016,3,17} {22,26,55}
 {application,lager,
              [{description,"Erlang logging framework"},
               {vsn,"2.1.1"},

@@ -49,7 +49,8 @@ content_types_accepted(Request, State) ->
 post_json(Req, State) ->
     RespMessage = case encoded_body(Req) of
                       {ok, EncodedBody} ->
-                          process_if_valid(EncodedBody);
+                          MessageToProcess = get_values(EncodedBody),
+                          process_if_valid(MessageToProcess);
                       {invalid, _Message} = M ->
                           M
                   end,
@@ -112,3 +113,11 @@ valid([Key|Keys], PropList) ->
         end;
 valid(Key, PropList) -> 
     valid([Key], PropList).
+
+get_values(EncodedMessage) ->
+    case proplists:get_value(<<"values">>, EncodedMessage) of
+        undefined ->
+            EncodedMessage;
+        ValuesMessage ->
+            ValuesMessage
+    end.

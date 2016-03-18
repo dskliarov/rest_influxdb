@@ -1,4 +1,4 @@
-%% app generated at {2016,3,13} {19,42,52}
+%% app generated at {2016,3,17} {22,26,56}
 {application,wx,
              [{description,"Yet another graphics system"},
               {vsn,"1.6"},

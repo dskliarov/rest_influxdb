@@ -14,6 +14,7 @@ start(_StartType, _StartArgs) ->
     application:ensure_started(crypto),
     application:ensure_started(cowlib),
     application:ensure_started(cowboy),
+    lager:start(),
     setup_api(),
     start_erflux(),
     rest_influxdb_sup:start_link().
@@ -30,8 +31,6 @@ start_erflux() ->
     application:ensure_started(idna),
     application:ensure_started(hackney),
     application:ensure_started(jsx),
-    application:ensure_started(erflux),
-    erflux_sup:add_erflux(erflux_http),
     erflux_http:get_databases().
 
 setup_api() ->

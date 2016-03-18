@@ -1,0 +1,1395 @@
+
+=====
+===== LOGGING STARTED Wed Mar 16 19:23:37 EDT 2016
+=====
+Exec: /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/erts-7.2.1/bin/erlexec  -boot /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/releases/1/rest_influxdb -mode embedded -config /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/releases/1/sys.config -args_file /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/releases/1/vm.args -- console 
+Root: /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb
+Erlang/OTP 18 [erts-7.2.1] [source] [64-bit] [smp:8:8] [async-threads:10] [hipe] [kernel-poll:false] [dtrace]
+
+Eshell V7.2.1  (abort with ^G)
+(rest_influxdb@127.0.0.1)1> 
+===== Wed Mar 16 19:31:14 EDT 2016
+
+=ERROR REPORT==== 16-Mar-2016::19:31:14 ===
+** Generic server <0.1463.0> terminating 
+** Last message in was {checkout,{"localhost",8086,hackney_tcp_transport},
+                                 <0.1467.0>,#Ref<0.0.6.1109>}
+** When Server state == {state,default,
+                               {metrics_ng,metrics_dummy},
+                               50,150000,
+                               {dict,50,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[[#Ref<0.0.6.1028>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1044>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1060>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1076>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1092>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [[#Ref<0.0.6.908>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.924>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.940>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.956>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.972>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.988>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1004>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1020>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [],
+                                       [[#Ref<0.0.6.713>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.729>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [[#Ref<0.0.6.779>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.795>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.811>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.827>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.843>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.859>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.875>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.891>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [[#Ref<0.0.6.755>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1101>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [],[],
+                                       [[#Ref<0.0.6.1036>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1052>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1068>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1084>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [[#Ref<0.0.6.916>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.932>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.948>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.964>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.980>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.996>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.1012>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [],
+                                       [[#Ref<0.0.6.721>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.737>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [[#Ref<0.0.6.771>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.787>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.803>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.819>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.835>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.851>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.867>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.883>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.899>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [[#Ref<0.0.6.225>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.747>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}],
+                                        [#Ref<0.0.6.763>|
+                                         {"localhost",8086,
+                                          hackney_tcp_transport}]],
+                                       [],[]}}},
+                               {dict,0,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                       [],[],[]}}},
+                               {dict,0,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                       [],[],[]}}},
+                               {dict,0,16,16,8,80,48,
+                                     {[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                      [],[],[]},
+                                     {{[],[],[],[],[],[],[],[],[],[],[],[],[],
+                                       [],[],[]}}},
+                               0}
+** Reason for termination == 
+** {'function not exported',
+       [{metrics,update_histogram,
+            [[{metrics_ng,metrics_dummy},hackney_pool,default,queue_count],1],
+            []},
+        {hackney_pool,handle_call,3,
+            [{file,"src/hackney_pool.erl"},{line,260}]},
+        {gen_server,try_handle_call,4,[{file,"gen_server.erl"},{line,629}]},
+        {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},
+        {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}
+
+=ERROR REPORT==== 16-Mar-2016::19:31:14 ===
+** Generic server influxdb_writer terminating 
+** Last message in was {'$gen_cast',
+                           {write_to_db,
+                               [[{<<"name">>,<<"plc2">>},{<<"value">>,23}],
+                                [{<<"name">>,<<"plc4">>},{<<"value">>,57}],
+                                [{<<"name">>,<<"plc54">>},{<<"value">>,57}],
+                                [{<<"name">>,<<"test15">>},
+                                 {<<"value">>,59}]]}}
+** When Server state == {state,<<"http://localhost:8086/write?db=test&u=localhost&p=root">>}
+** Reason for termination == 
+** {{{undef,[{metrics,update_histogram,
+                      [[{metrics_ng,metrics_dummy},
+                        hackney_pool,default,queue_count],
+                       1],
+                      []},
+             {hackney_pool,handle_call,3,
+                           [{file,"src/hackney_pool.erl"},{line,260}]},
+             {gen_server,try_handle_call,4,
+                         [{file,"gen_server.erl"},{line,629}]},
+             {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,661}]},
+             {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]},
+     {gen_server,call,
+                 [<0.1463.0>,
+                  {checkout,{"localhost",8086,hackney_tcp_transport},
+                            <0.1467.0>,#Ref<0.0.6.1109>},
+                  infinity]}},
+    [{gen_server,call,3,[{file,"gen_server.erl"},{line,212}]},
+     {hackney_pool,checkout,4,[{file,"src/hackney_pool.erl"},{line,66}]},
+     {hackney_connect,socket_from_pool,4,
+                      [{file,"src/hackney_connect.erl"},{line,186}]},
+     {hackney_connect,connect,5,[{file,"src/hackney_connect.erl"},{line,36}]},
+     {hackney,request,5,[{file,"src/hackney.erl"},{line,321}]},
+     {influxdb_writer,post_value,2,
+                      [{file,"src/influxdb_writer.erl"},{line,150}]},
+     {lists,foreach,2,[{file,"lists.erl"},{line,1337}]},
+     {influxdb_writer,handle_cast,2,
+                      [{file,"src/influxdb_writer.erl"},{line,99}]}]}
+(rest_influxdb@127.0.0.1)1> dbg:tracer()[C[C.
+{ok,<0.1483.0>}
+(rest_influxdb@127.0.0.1)2> dbg; p :p(alk l,c)[C[C[C[C[C[C[C.
+{ok,[{matched,'rest_influxdb@127.0.0.1',172}]}
+(rest_influxdb@127.0.0.1)3> dbg:tpl(re
+re                   rec_env              recon                
+recon_alloc          recon_lib            recon_trace          
+release_handler      release_handler_1    rest_handler         
+rest_influxdb_app    rest_influxdb_sup    
+(rest_influxdb@127.0.0.1)3> dbg:tpl(rest_influxdb_
+rest_influxdb_app    rest_influxdb_sup    
+(rest_influxdb@127.0.0.1)3> dbg:tpl(rest_influxdb_         handler: ,'_',x)[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+{ok,[{matched,'rest_influxdb@127.0.0.1',12},{saved,x}]}
+(rest_influxdb@127.0.0.1)4> (<0.1488.0>) call rest_handler:init({tcp,http},{http_req,#Port<0.4113>,ranch_tcp,keepalive,<0.1488.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},53767},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"169">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"connection">>,[<<"keep-alive">>]}],
+          undefined,[],waiting,
+          <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+          undefined,false,waiting,[],<<>>,undefined},[])
+(<0.1488.0>) returned from rest_handler:init/3 -> {upgrade,protocol,
+                                                   cowboy_rest}
+(<0.1488.0>) call rest_handler:rest_init({http_req,#Port<0.4113>,ranch_tcp,keepalive,<0.1488.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},53767},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"169">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"connection">>,[<<"keep-alive">>]}],
+          undefined,[],waiting,
+          <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+          undefined,false,waiting,[],<<>>,undefined},[])
+(<0.1488.0>) returned from rest_handler:rest_init/2 -> {ok,
+                                                        {http_req,
+                                                         #Port<0.4113>,
+                                                         ranch_tcp,keepalive,
+                                                         <0.1488.0>,
+                                                         <<"POST">>,
+                                                         'HTTP/1.1',
+                                                         {{127,0,0,1},53767},
+                                                         <<"127.0.0.1">>,
+                                                         undefined,8080,
+                                                         <<"/api/influxdb">>,
+                                                         undefined,<<>>,
+                                                         undefined,[],
+                                                         [{<<"host">>,
+                                                           <<"127.0.0.1:8080">>},
+                                                          {<<"connection">>,
+                                                           <<"keep-alive">>},
+                                                          {<<"content-length">>,
+                                                           <<"169">>},
+                                                          {<<"cache-control">>,
+                                                           <<"no-cache">>},
+                                                          {<<"origin">>,
+                                                           <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                                                          {<<"content-type">>,
+                                                           <<"application/json">>},
+                                                          {<<"user-agent">>,
+                                                           <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                                                          {<<"postman-token">>,
+                                                           <<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+                                                          {<<"accept">>,
+                                                           <<"*/*">>},
+                                                          {<<"accept-encoding">>,
+                                                           <<"gzip, deflate">>},
+                                                          {<<"accept-language">>,
+                                                           <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+                                                         [{<<"connection">>,
+                                                           [<<"keep-alive">>]}],
+                                                         undefined,[],waiting,
+                                                         <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+                                                         undefined,false,
+                                                         waiting,[],<<>>,
+                                                         undefined},
+                                                        {state,[]}}
+(<0.1488.0>) call rest_handler:allowed_methods({http_req,#Port<0.4113>,ranch_tcp,keepalive,<0.1488.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},53767},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"169">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"connection">>,[<<"keep-alive">>]}],
+          undefined,[],waiting,
+          <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+          undefined,false,waiting,[],<<>>,undefined},{state,[]})
+(<0.1488.0>) returned from rest_handler:allowed_methods/2 -> {[<<"POST">>],
+                                                              {http_req,
+                                                               #Port<0.4113>,
+                                                               ranch_tcp,
+                                                               keepalive,
+                                                               <0.1488.0>,
+                                                               <<"POST">>,
+                                                               'HTTP/1.1',
+                                                               {{127,0,0,1},
+                                                                53767},
+                                                               <<"127.0.0.1">>,
+                                                               undefined,8080,
+                                                               <<"/api/influxdb">>,
+                                                               undefined,<<>>,
+                                                               undefined,[],
+                                                               [{<<"host">>,
+                                                                 <<"127.0.0.1:8080">>},
+                                                                {<<"connection">>,
+                                                                 <<"keep-alive">>},
+                                                                {<<"content-length">>,
+                                                                 <<"169">>},
+                                                                {<<"cache-control">>,
+                                                                 <<"no-cache">>},
+                                                                {<<"origin">>,
+                                                                 <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                                                                {<<"content-type">>,
+                                                                 <<"application/json">>},
+                                                                {<<"user-agent">>,
+                                                                 <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                                                                {<<"postman-token">>,
+                                                                 <<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+                                                                {<<"accept">>,
+                                                                 <<"*/*">>},
+                                                                {<<"accept-encoding">>,
+                                                                 <<"gzip, deflate">>},
+                                                                {<<"accept-language">>,
+                                                                 <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+                                                               [{<<"connection">>,
+                                                                 [<<"keep-alive">>]}],
+                                                               undefined,[],
+                                                               waiting,
+                                                               <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+                                                               undefined,
+                                                               false,waiting,
+                                                               [],<<>>,
+                                                               undefined},
+                                                              {state,[]}}
+(<0.1488.0>) call rest_handler:content_types_accepted({http_req,#Port<0.4113>,ranch_tcp,keepalive,<0.1488.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},53767},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"169">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined},{state,[]})
+(<0.1488.0>) returned from rest_handler:content_types_accepted/2 -> {[{<<"application/json">>,
+                                                                       post_json}],
+                                                                     {http_req,
+                                                                      #Port<0.4113>,
+                                                                      ranch_tcp,
+                                                                      keepalive,
+                                                                      <0.1488.0>,
+                                                                      <<"POST">>,
+                                                                      'HTTP/1.1',
+                                                                      {{127,0,
+                                                                        0,1},
+                                                                       53767},
+                                                                      <<"127.0.0.1">>,
+                                                                      undefined,
+                                                                      8080,
+                                                                      <<"/api/influxdb">>,
+                                                                      undefined,
+                                                                      <<>>,
+                                                                      undefined,
+                                                                      [],
+                                                                      [{<<"host">>,
+                                                                        <<"127.0.0.1:8080">>},
+                                                                       {<<"connection">>,
+                                                                        <<"keep-alive">>},
+                                                                       {<<"content-length">>,
+                                                                        <<"169">>},
+                                                                       {<<"cache-control">>,
+                                                                        <<"no-cache">>},
+                                                                       {<<"origin">>,
+                                                                        <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                                                                       {<<"content-type">>,
+                                                                        <<"application/json">>},
+                                                                       {<<"user-agent">>,
+                                                                        <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                                                                       {<<"postman-token">>,
+                                                                        <<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+                                                                       {<<"accept">>,
+                                                                        <<"*/*">>},
+                                                                       {<<"accept-encoding">>,
+                                                                        <<"gzip, deflate">>},
+                                                                       {<<"accept-language">>,
+                                                                        <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+                                                                      [{<<"if-modified-since">>,
+                                                                        undefined},
+                                                                       {<<"if-none-match">>,
+                                                                        undefined},
+                                                                       {<<"if-unmodified-since">>,
+                                                                        undefined},
+                                                                       {<<"if-match">>,
+                                                                        undefined},
+                                                                       {<<"accept">>,
+                                                                        [{{<<"*">>,
+                                                                           <<"*">>,
+                                                                           []},
+                                                                          1000,
+                                                                          []}]},
+                                                                       {<<"connection">>,
+                                                                        [<<"keep-alive">>]}],
+                                                                      undefined,
+                                                                      [{media_type,
+                                                                        {<<"text">>,
+                                                                         <<"html">>,
+                                                                         []}},
+                                                                       {charset,
+                                                                        undefined}],
+                                                                      waiting,
+                                                                      <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+                                                                      undefined,
+                                                                      false,
+                                                                      waiting,
+                                                                      [{<<"content-type">>,
+                                                                        [<<"text">>,
+                                                                         <<"/">>,
+                                                                         <<"html">>,
+                                                                         <<>>]}],
+                                                                      <<>>,
+                                                                      undefined},
+                                                                     {state,
+                                                                      []}}
+(<0.1488.0>) call rest_handler:post_json({http_req,#Port<0.4113>,ranch_tcp,keepalive,<0.1488.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},53767},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"169">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"content-type">>,{<<"application">>,<<"json">>,[]}},
+           {<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined},{state,[]})
+(<0.1488.0>) call rest_handler:encoded_body({http_req,#Port<0.4113>,ranch_tcp,keepalive,<0.1488.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},53767},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"169">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"content-type">>,{<<"application">>,<<"json">>,[]}},
+           {<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined})
+(<0.1488.0>) returned from rest_handler:encoded_body/1 -> {ok,
+                                                           [[{<<"name">>,
+                                                              <<"plc2">>},
+                                                             {<<"value">>,
+                                                              133}],
+                                                            [{<<"name">>,
+                                                              <<"plc4">>},
+                                                             {<<"value">>,57}],
+                                                            [{<<"name">>,
+                                                              <<"plc54">>},
+                                                             {<<"value">>,57}],
+                                                            [{<<"name">>,
+                                                              <<"test15">>},
+                                                             {<<"value">>,
+                                                              59}]]}
+(<0.1488.0>) call rest_handler:process_if_valid([[{<<"name">>,<<"plc2">>},{<<"value">>,133}],
+ [{<<"name">>,<<"plc4">>},{<<"value">>,57}],
+ [{<<"name">>,<<"plc54">>},{<<"value">>,57}],
+ [{<<"name">>,<<"test15">>},{<<"value">>,59}]])
+(<0.1488.0>) call rest_handler:valid([<<"name">>,<<"value">>],[{<<"name">>,<<"plc2">>},{<<"value">>,133}])
+(<0.1488.0>) call rest_handler:valid([<<"value">>],[{<<"name">>,<<"plc2">>},{<<"value">>,133}])
+(<0.1488.0>) call rest_handler:valid([],[{<<"name">>,<<"plc2">>},{<<"value">>,133}])
+(<0.1488.0>) returned from rest_handler:valid/2 -> valid
+(<0.1488.0>) returned from rest_handler:valid/2 -> valid
+(<0.1488.0>) returned from rest_handler:valid/2 -> valid
+(<0.1488.0>) call rest_handler:process_message([[{<<"name">>,<<"plc2">>},{<<"value">>,133}],
+ [{<<"name">>,<<"plc4">>},{<<"value">>,57}],
+ [{<<"name">>,<<"plc54">>},{<<"value">>,57}],
+ [{<<"name">>,<<"test15">>},{<<"value">>,59}]])
+(<0.1488.0>) returned from rest_handler:process_message/1 -> {accepted,
+                                                              "Message accepted"}
+(<0.1488.0>) returned from rest_handler:process_if_valid/1 -> {accepted,
+                                                               "Message accepted"}
+(<0.1488.0>) call rest_handler:update_response({accepted,"Message accepted"},{http_req,#Port<0.4113>,ranch_tcp,keepalive,<0.1488.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},53767},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"169">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"content-type">>,{<<"application">>,<<"json">>,[]}},
+           {<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined})
+(<0.1488.0>) returned from rest_handler:update_response/2 -> {ok,
+                                                              {http_req,
+                                                               #Port<0.4113>,
+                                                               ranch_tcp,
+                                                               keepalive,
+                                                               <0.1488.0>,
+                                                               <<"POST">>,
+                                                               'HTTP/1.1',
+                                                               {{127,0,0,1},
+                                                                53767},
+                                                               <<"127.0.0.1">>,
+                                                               undefined,8080,
+                                                               <<"/api/influxdb">>,
+                                                               undefined,<<>>,
+                                                               undefined,[],
+                                                               [{<<"host">>,
+                                                                 <<"127.0.0.1:8080">>},
+                                                                {<<"connection">>,
+                                                                 <<"keep-alive">>},
+                                                                {<<"content-length">>,
+                                                                 <<"169">>},
+                                                                {<<"cache-control">>,
+                                                                 <<"no-cache">>},
+                                                                {<<"origin">>,
+                                                                 <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                                                                {<<"content-type">>,
+                                                                 <<"application/json">>},
+                                                                {<<"user-agent">>,
+                                                                 <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                                                                {<<"postman-token">>,
+                                                                 <<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+                                                                {<<"accept">>,
+                                                                 <<"*/*">>},
+                                                                {<<"accept-encoding">>,
+                                                                 <<"gzip, deflate">>},
+                                                                {<<"accept-language">>,
+                                                                 <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+                                                               [{<<"content-type">>,
+                                                                 {<<"application">>,
+                                                                  <<"json">>,
+                                                                  []}},
+                                                                {<<"if-modified-since">>,
+                                                                 undefined},
+                                                                {<<"if-none-match">>,
+                                                                 undefined},
+                                                                {<<"if-unmodified-since">>,
+                                                                 undefined},
+                                                                {<<"if-match">>,
+                                                                 undefined},
+                                                                {<<"accept">>,
+                                                                 [{{<<"*">>,
+                                                                    <<"*">>,
+                                                                    []},
+                                                                   1000,[]}]},
+                                                                {<<"connection">>,
+                                                                 [<<"keep-alive">>]}],
+                                                               undefined,
+                                                               [{media_type,
+                                                                 {<<"text">>,
+                                                                  <<"html">>,
+                                                                  []}},
+                                                                {charset,
+                                                                 undefined}],
+                                                               waiting,
+                                                               <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+                                                               undefined,
+                                                               false,done,[],
+                                                               <<>>,
+                                                               undefined}}
+(<0.1488.0>) returned from rest_handler:post_json/2 -> {halt,
+                                                        {http_req,
+                                                         #Port<0.4113>,
+                                                         ranch_tcp,keepalive,
+                                                         <0.1488.0>,
+                                                         <<"POST">>,
+                                                         'HTTP/1.1',
+                                                         {{127,0,0,1},53767},
+                                                         <<"127.0.0.1">>,
+                                                         undefined,8080,
+                                                         <<"/api/influxdb">>,
+                                                         undefined,<<>>,
+                                                         undefined,[],
+                                                         [{<<"host">>,
+                                                           <<"127.0.0.1:8080">>},
+                                                          {<<"connection">>,
+                                                           <<"keep-alive">>},
+                                                          {<<"content-length">>,
+                                                           <<"169">>},
+                                                          {<<"cache-control">>,
+                                                           <<"no-cache">>},
+                                                          {<<"origin">>,
+                                                           <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                                                          {<<"content-type">>,
+                                                           <<"application/json">>},
+                                                          {<<"user-agent">>,
+                                                           <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                                                          {<<"postman-token">>,
+                                                           <<"0c5194ad-33b9-f865-67a0-8b16e3f65df7">>},
+                                                          {<<"accept">>,
+                                                           <<"*/*">>},
+                                                          {<<"accept-encoding">>,
+                                                           <<"gzip, deflate">>},
+                                                          {<<"accept-language">>,
+                                                           <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+                                                         [{<<"content-type">>,
+                                                           {<<"application">>,
+                                                            <<"json">>,[]}},
+                                                          {<<"if-modified-since">>,
+                                                           undefined},
+                                                          {<<"if-none-match">>,
+                                                           undefined},
+                                                          {<<"if-unmodified-since">>,
+                                                           undefined},
+                                                          {<<"if-match">>,
+                                                           undefined},
+                                                          {<<"accept">>,
+                                                           [{{<<"*">>,<<"*">>,
+                                                              []},
+                                                             1000,[]}]},
+                                                          {<<"connection">>,
+                                                           [<<"keep-alive">>]}],
+                                                         undefined,
+                                                         [{media_type,
+                                                           {<<"text">>,
+                                                            <<"html">>,[]}},
+                                                          {charset,undefined}],
+                                                         waiting,
+                                                         <<"[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n">>,
+                                                         undefined,false,done,
+                                                         [],<<>>,undefined},
+                                                        {state,[]}}
+
+(rest_influxdb@127.0.0.1)4> 
+(rest_influxdb@127.0.0.1)4> 
+(rest_influxdb@127.0.0.1)4> 
+(rest_influxdb@127.0.0.1)4> 
+(rest_influxdb@127.0.0.1)4> 
+(rest_influxdb@127.0.0.1)4> 
+===== ALIVE Wed Mar 16 19:50:32 EDT 2016
+
+===== ALIVE Wed Mar 16 20:05:32 EDT 2016
+
+===== ALIVE Wed Mar 16 20:20:32 EDT 2016
+
+===== ALIVE Wed Mar 16 20:35:31 EDT 2016
+
+===== ALIVE Wed Mar 16 20:50:31 EDT 2016
+
+===== ALIVE Thu Mar 17 08:19:55 EDT 2016
+
+===== ALIVE Thu Mar 17 08:34:55 EDT 2016
+
+===== ALIVE Thu Mar 17 08:49:55 EDT 2016
+
+===== ALIVE Thu Mar 17 09:04:55 EDT 2016
+
+===== ALIVE Thu Mar 17 09:19:55 EDT 2016
+
+===== ALIVE Thu Mar 17 09:34:55 EDT 2016
+
+===== ALIVE Thu Mar 17 09:49:55 EDT 2016
+
+===== ALIVE Thu Mar 17 10:04:55 EDT 2016
+
+===== ALIVE Thu Mar 17 10:19:55 EDT 2016
+
+===== ALIVE Thu Mar 17 10:34:55 EDT 2016
+
+===== ALIVE Thu Mar 17 10:49:55 EDT 2016
+
+===== ALIVE Thu Mar 17 11:04:55 EDT 2016
+
+===== ALIVE Thu Mar 17 11:19:55 EDT 2016
+
+===== ALIVE Thu Mar 17 11:34:55 EDT 2016
+
+===== ALIVE Thu Mar 17 11:49:55 EDT 2016
+
+===== ALIVE Thu Mar 17 12:04:55 EDT 2016
+
+===== ALIVE Thu Mar 17 12:19:55 EDT 2016
+
+===== ALIVE Thu Mar 17 12:34:55 EDT 2016
+
+===== ALIVE Thu Mar 17 12:49:55 EDT 2016
+
+===== ALIVE Thu Mar 17 13:04:55 EDT 2016
+
+===== ALIVE Thu Mar 17 13:19:55 EDT 2016
+
+===== ALIVE Thu Mar 17 13:34:55 EDT 2016
+
+===== ALIVE Thu Mar 17 13:49:55 EDT 2016
+
+===== ALIVE Thu Mar 17 14:04:55 EDT 2016
+
+===== ALIVE Thu Mar 17 14:19:55 EDT 2016
+
+===== ALIVE Thu Mar 17 14:34:55 EDT 2016
+
+===== ALIVE Thu Mar 17 14:49:55 EDT 2016
+
+===== ALIVE Thu Mar 17 15:04:55 EDT 2016
+
+===== ALIVE Thu Mar 17 15:19:54 EDT 2016
+
+===== ALIVE Thu Mar 17 15:34:54 EDT 2016
+
+===== ALIVE Thu Mar 17 15:49:54 EDT 2016
+
+===== ALIVE Thu Mar 17 16:04:54 EDT 2016
+
+===== ALIVE Thu Mar 17 16:19:54 EDT 2016
+
+===== ALIVE Thu Mar 17 16:34:54 EDT 2016
+
+===== ALIVE Thu Mar 17 16:49:54 EDT 2016
+
+===== ALIVE Thu Mar 17 17:04:54 EDT 2016
+
+===== ALIVE Thu Mar 17 17:19:54 EDT 2016
+
+===== ALIVE Thu Mar 17 17:34:54 EDT 2016
+
+===== ALIVE Thu Mar 17 17:49:54 EDT 2016
+
+===== ALIVE Thu Mar 17 18:04:54 EDT 2016
+
+===== ALIVE Thu Mar 17 18:19:54 EDT 2016
+
+===== ALIVE Thu Mar 17 18:34:54 EDT 2016
+
+===== ALIVE Thu Mar 17 18:49:54 EDT 2016
+
+===== ALIVE Thu Mar 17 19:04:54 EDT 2016
+
+===== ALIVE Thu Mar 17 19:19:54 EDT 2016
+
+===== ALIVE Thu Mar 17 19:34:54 EDT 2016
+
+===== ALIVE Thu Mar 17 19:49:54 EDT 2016
+
+===== ALIVE Thu Mar 17 20:04:54 EDT 2016
+
+===== ALIVE Thu Mar 17 20:19:54 EDT 2016
+
+===== ALIVE Thu Mar 17 20:34:54 EDT 2016
+
+===== ALIVE Thu Mar 17 20:49:54 EDT 2016
+
+===== ALIVE Thu Mar 17 21:04:54 EDT 2016
+
+===== ALIVE Thu Mar 17 21:19:54 EDT 2016
+
+===== ALIVE Thu Mar 17 21:34:54 EDT 2016
+
+===== ALIVE Thu Mar 17 21:49:54 EDT 2016
+
+===== ALIVE Thu Mar 17 22:04:54 EDT 2016
+
+=====
+===== LOGGING STARTED Thu Mar 17 22:06:22 EDT 2016
+=====
+Exec: /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/erts-7.2.1/bin/erlexec  -boot /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/releases/1/rest_influxdb -mode embedded -config /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/releases/1/sys.config -args_file /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/releases/1/vm.args -- console 
+Root: /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb
+{error_logger,{{2016,3,17},{22,6,24}},"Protocol: ~tp: the name rest_influxdb@127.0.0.1 seems to be in use by another Erlang node",["inet_tcp"]}
+{error_logger,{{2016,3,17},{22,6,24}},crash_report,[[{initial_call,{net_kernel,init,['Argument__1']}},{pid,<0.1293.0>},{registered_name,[]},{error_info,{exit,{error,badarg},[{gen_server,init_it,6,[{file,"gen_server.erl"},{line,344}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}},{ancestors,[net_sup,kernel_sup,<0.1281.0>]},{messages,[]},{links,[#Port<0.2765>,<0.1290.0>]},{dictionary,[{longnames,true}]},{trap_exit,true},{status,running},{heap_size,987},{stack_size,27},{reductions,845}],[]]}
+{error_logger,{{2016,3,17},{22,6,24}},supervisor_report,[{supervisor,{local,net_sup}},{errorContext,start_error},{reason,{'EXIT',nodistribution}},{offender,[{pid,undefined},{id,net_kernel},{mfargs,{net_kernel,start_link,[['rest_influxdb@127.0.0.1',longnames]]}},{restart_type,permanent},{shutdown,2000},{child_type,worker}]}]}
+{error_logger,{{2016,3,17},{22,6,24}},supervisor_report,[{supervisor,{local,kernel_sup}},{errorContext,start_error},{reason,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}},{offender,[{pid,undefined},{id,net_sup},{mfargs,{erl_distribution,start_link,[]}},{restart_type,permanent},{shutdown,infinity},{child_type,supervisor}]}]}
+{error_logger,{{2016,3,17},{22,6,24}},crash_report,[[{initial_call,{application_master,init,['Argument__1','Argument__2','Argument__3','Argument__4']}},{pid,<0.1280.0>},{registered_name,[]},{error_info,{exit,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}},[{application_master,init,4,[{file,"application_master.erl"},{line,134}]},{proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,240}]}]}},{ancestors,[<0.1279.0>]},{messages,[{'EXIT',<0.1281.0>,normal}]},{links,[<0.1279.0>,<0.1278.0>]},{dictionary,[]},{trap_exit,true},{status,running},{heap_size,376},{stack_size,27},{reductions,117}],[]]}
+{error_logger,{{2016,3,17},{22,6,24}},std_info,[{application,kernel},{exited,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}}},{type,permanent}]}
+{"Kernel pid terminated",application_controller,"{application_start_failure,kernel,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{kernel,start,[normal,[]]}}}"}
+
+Crash dump is being written to: erl_crash.dump...done
+Kernel pid terminated (application_controller) ({application_start_failure,kernel,{{shutdown,{failed_to_start_child,net_sup,{shutdown,{failed_to_start_child,net_kernel,{'EXIT',nodistribution}}}}},{k
+                            (rest_influxdb@127.0.0.1)4> (<0.1956.0>) call rest_handler:init({tcp,http},{http_req,#Port<0.4120>,ranch_tcp,keepalive,<0.1956.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},56507},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"179">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"connection">>,[<<"keep-alive">>]}],
+          undefined,[],waiting,
+          <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+          undefined,false,waiting,[],<<>>,undefined},[])
+(<0.1956.0>) returned from rest_handler:init/3 -> {upgrade,protocol,
+                                                   cowboy_rest}
+(<0.1956.0>) call rest_handler:rest_init({http_req,#Port<0.4120>,ranch_tcp,keepalive,<0.1956.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},56507},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"179">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"connection">>,[<<"keep-alive">>]}],
+          undefined,[],waiting,
+          <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+          undefined,false,waiting,[],<<>>,undefined},[])
+(<0.1956.0>) returned from rest_handler:rest_init/2 -> {ok,
+                                                        {http_req,
+                                                         #Port<0.4120>,
+                                                         ranch_tcp,keepalive,
+                                                         <0.1956.0>,
+                                                         <<"POST">>,
+                                                         'HTTP/1.1',
+                                                         {{127,0,0,1},56507},
+                                                         <<"127.0.0.1">>,
+                                                         undefined,8080,
+                                                         <<"/api/influxdb">>,
+                                                         undefined,<<>>,
+                                                         undefined,[],
+                                                         [{<<"host">>,
+                                                           <<"127.0.0.1:8080">>},
+                                                          {<<"connection">>,
+                                                           <<"keep-alive">>},
+                                                          {<<"content-length">>,
+                                                           <<"179">>},
+                                                          {<<"cache-control">>,
+                                                           <<"no-cache">>},
+                                                          {<<"origin">>,
+                                                           <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                                                          {<<"content-type">>,
+                                                           <<"application/json">>},
+                                                          {<<"user-agent">>,
+                                                           <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                                                          {<<"postman-token">>,
+                                                           <<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+                                                          {<<"accept">>,
+                                                           <<"*/*">>},
+                                                          {<<"accept-encoding">>,
+                                                           <<"gzip, deflate">>},
+                                                          {<<"accept-language">>,
+                                                           <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+                                                         [{<<"connection">>,
+                                                           [<<"keep-alive">>]}],
+                                                         undefined,[],waiting,
+                                                         <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+                                                         undefined,false,
+                                                         waiting,[],<<>>,
+                                                         undefined},
+                                                        {state,[]}}
+(<0.1956.0>) call rest_handler:allowed_methods({http_req,#Port<0.4120>,ranch_tcp,keepalive,<0.1956.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},56507},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"179">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"connection">>,[<<"keep-alive">>]}],
+          undefined,[],waiting,
+          <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+          undefined,false,waiting,[],<<>>,undefined},{state,[]})
+
+=ERROR REPORT==== 17-Mar-2016::22:07:30 ===
+Error in process <0.1956.0> on node 'rest_influxdb@127.0.0.1' with exit value:
+{[{reason,badarg},
+  {mfa,{rest_handler,post_json,2}},
+  {stacktrace,[{erlang,list_to_binary,[<<"\"invalid json\"">>],[]},
+               {rest_handler,update_response,2,
+                             [{file,"src/rest_handler.erl"},{line,89}]},
+               {rest_handler,post_json,2,
+                             [{file,"src/rest_handler.erl"},{line,56}]},
+               {cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,976}]},
+               {cowboy_rest,process_content_type,3,
+                            [{file,"src/cowboy_rest.erl"},{line,777}]},
+               {cowboy_protocol,execute,4,
+                                [{file,"src/cowboy_protocol.erl"},
+                                 {line,442}]}]},
+  {req,[{socket,#Port<0.4120>},
+        {transport,ranch_tcp},
+        {connection,keepalive},
+        {pid,<0.1956.0>},
+        {method,<<"POST">>},
+        {version,'HTTP/1.1'},
+        {peer,{{127,0,0,1},56507}},
+        {host,<<"127.0.0.1">>},
+        {host_info,undefined},
+        {port,8080},
+        {path,<<"/api/influxdb">>},
+        {path_info,undefined},
+        {qs,<<>>},
+        {qs_vals,undefined},
+        {bindings,[]},
+        {headers,[{<<"host">>,<<"127.0.0.1:8080">>},
+                  {<<"connection">>,<<"keep-alive">>},
+                  {<<"content-length">>,<<"179">>},
+                  {<<"cache-control">>,<<"no-cache">>},
+                  {<<"origin">>,
+                   <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                  {<<"content-type">>,<<"application/json">>},
+                  {<<"user-agent">>,
+                   <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                  {<<"postman-token">>,
+                   <<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+                  {<<"accept">>,<<"*/*">>},
+                  {<<"accept-encoding">>,<<"gzip, deflate">>},
+                  {<<"accept-language">>,
+                   <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}]},
+        {p_headers,[{<<"content-type">>,{<<"application">>,<<"json">>,[]}},
+                    {<<"if-modified-since">>,undefined},
+                    {<<"if-none-match">>,undefined},
+                    {<<"if-unmodified-since">>,undefined},
+                    {<<"if-match">>,undefined},
+                    {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+                    {<<"connection">>,[<<"keep-alive">>]}]},
+        {cookies,undefined},
+        {meta,[{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}]},
+        {body_state,waiting},
+        {buffer,<<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>},
+        {multipart,undefined},
+        {resp_compress,false},
+        {resp_state,waiting},
+        {resp_headers,[{<<"content-type">>,
+                        [<<"text">>,<<"/">>,<<"html">>,<<>>]}]},
+        {resp_body,<<>>},
+        {onresponse,undefined}]},
+  {state,{state,[]}}],
+ [{cowboy_rest,process_content_type,3,
+               [{file,"src/cowboy_rest.erl"},{line,777}]},
+  {cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+(<0.1956.0>) returned from rest_handler:allowed_methods/2 -> {[<<"POST">>],
+                                                              {http_req,
+                                                               #Port<0.4120>,
+                                                               ranch_tcp,
+                                                               keepalive,
+                                                               <0.1956.0>,
+                                                               <<"POST">>,
+                                                               'HTTP/1.1',
+                                                               {{127,0,0,1},
+                                                                56507},
+                                                               <<"127.0.0.1">>,
+                                                               undefined,8080,
+                                                               <<"/api/influxdb">>,
+                                                               undefined,<<>>,
+                                                               undefined,[],
+                                                               [{<<"host">>,
+                                                                 <<"127.0.0.1:8080">>},
+                                                                {<<"connection">>,
+                                                                 <<"keep-alive">>},
+                                                                {<<"content-length">>,
+                                                                 <<"179">>},
+                                                                {<<"cache-control">>,
+                                                                 <<"no-cache">>},
+                                                                {<<"origin">>,
+                                                                 <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                                                                {<<"content-type">>,
+                                                                 <<"application/json">>},
+                                                                {<<"user-agent">>,
+                                                                 <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                                                                {<<"postman-token">>,
+                                                                 <<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+                                                                {<<"accept">>,
+                                                                 <<"*/*">>},
+                                                                {<<"accept-encoding">>,
+                                                                 <<"gzip, deflate">>},
+                                                                {<<"accept-language">>,
+                                                                 <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+                                                               [{<<"connection">>,
+                                                                 [<<"keep-alive">>]}],
+                                                               undefined,[],
+                                                               waiting,
+                                                               <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+                                                               undefined,
+                                                               false,waiting,
+                                                               [],<<>>,
+                                                               undefined},
+                                                              {state,[]}}
+
+=ERROR REPORT==== 17-Mar-2016::22:07:30 ===
+Ranch listener http had connection process started with cowboy_protocol:start_link/4 at <0.1956.0> exit with reason: {[{reason,badarg},{mfa,{rest_handler,post_json,2}},{stacktrace,[{erlang,list_to_binary,[<<"\"invalid json\"">>],[]},{rest_handler,update_response,2,[{file,"src/rest_handler.erl"},{line,89}]},{rest_handler,post_json,2,[{file,"src/rest_handler.erl"},{line,56}]},{cowboy_rest,call,3,[{file,"src/cowboy_rest.erl"},{line,976}]},{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,777}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]},{req,[{socket,#Port<0.4120>},{transport,ranch_tcp},{connection,keepalive},{pid,<0.1956.0>},{method,<<"POST">>},{version,'HTTP/1.1'},{peer,{{127,0,0,1},56507}},{host,<<"127.0.0.1">>},{host_info,undefined},{port,8080},{path,<<"/api/influxdb">>},{path_info,undefined},{qs,<<>>},{qs_vals,undefined},{bindings,[]},{headers,[{<<"host">>,<<"127.0.0.1:8080">>},{<<"connection">>,<<"keep-alive">>},{<<"content-length">>,<<"179">>},{<<"cache-control">>,<<"no-cache">>},{<<"origin">>,<<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},{<<"content-type">>,<<"application/json">>},{<<"user-agent">>,<<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},{<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},{<<"accept">>,<<"*/*">>},{<<"accept-encoding">>,<<"gzip, deflate">>},{<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}]},{p_headers,[{<<"content-type">>,{<<"application">>,<<"json">>,[]}},{<<"if-modified-since">>,undefined},{<<"if-none-match">>,undefined},{<<"if-unmodified-since">>,undefined},{<<"if-match">>,undefined},{<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},{<<"connection">>,[<<"keep-alive">>]}]},{cookies,undefined},{meta,[{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}]},{body_state,waiting},{buffer,<<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>},{multipart,undefined},{resp_compress,false},{resp_state,waiting},{resp_headers,[{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}]},{resp_body,<<>>},{onresponse,undefined}]},{state,{state,[]}}],[{cowboy_rest,process_content_type,3,[{file,"src/cowboy_rest.erl"},{line,777}]},{cowboy_protocol,execute,4,[{file,"src/cowboy_protocol.erl"},{line,442}]}]}
+(<0.1956.0>) call rest_handler:content_types_accepted({http_req,#Port<0.4120>,ranch_tcp,keepalive,<0.1956.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},56507},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"179">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined},{state,[]})
+(<0.1956.0>) returned from rest_handler:content_types_accepted/2 -> {[{<<"application/json">>,
+                                                                       post_json}],
+                                                                     {http_req,
+                                                                      #Port<0.4120>,
+                                                                      ranch_tcp,
+                                                                      keepalive,
+                                                                      <0.1956.0>,
+                                                                      <<"POST">>,
+                                                                      'HTTP/1.1',
+                                                                      {{127,0,
+                                                                        0,1},
+                                                                       56507},
+                                                                      <<"127.0.0.1">>,
+                                                                      undefined,
+                                                                      8080,
+                                                                      <<"/api/influxdb">>,
+                                                                      undefined,
+                                                                      <<>>,
+                                                                      undefined,
+                                                                      [],
+                                                                      [{<<"host">>,
+                                                                        <<"127.0.0.1:8080">>},
+                                                                       {<<"connection">>,
+                                                                        <<"keep-alive">>},
+                                                                       {<<"content-length">>,
+                                                                        <<"179">>},
+                                                                       {<<"cache-control">>,
+                                                                        <<"no-cache">>},
+                                                                       {<<"origin">>,
+                                                                        <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+                                                                       {<<"content-type">>,
+                                                                        <<"application/json">>},
+                                                                       {<<"user-agent">>,
+                                                                        <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+                                                                       {<<"postman-token">>,
+                                                                        <<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+                                                                       {<<"accept">>,
+                                                                        <<"*/*">>},
+                                                                       {<<"accept-encoding">>,
+                                                                        <<"gzip, deflate">>},
+                                                                       {<<"accept-language">>,
+                                                                        <<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+                                                                      [{<<"if-modified-since">>,
+                                                                        undefined},
+                                                                       {<<"if-none-match">>,
+                                                                        undefined},
+                                                                       {<<"if-unmodified-since">>,
+                                                                        undefined},
+                                                                       {<<"if-match">>,
+                                                                        undefined},
+                                                                       {<<"accept">>,
+                                                                        [{{<<"*">>,
+                                                                           <<"*">>,
+                                                                           []},
+                                                                          1000,
+                                                                          []}]},
+                                                                       {<<"connection">>,
+                                                                        [<<"keep-alive">>]}],
+                                                                      undefined,
+                                                                      [{media_type,
+                                                                        {<<"text">>,
+                                                                         <<"html">>,
+                                                                         []}},
+                                                                       {charset,
+                                                                        undefined}],
+                                                                      waiting,
+                                                                      <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+                                                                      undefined,
+                                                                      false,
+                                                                      waiting,
+                                                                      [{<<"content-type">>,
+                                                                        [<<"text">>,
+                                                                         <<"/">>,
+                                                                         <<"html">>,
+                                                                         <<>>]}],
+                                                                      <<>>,
+                                                                      undefined},
+                                                                     {state,
+                                                                      []}}
+(<0.1956.0>) call rest_handler:post_json({http_req,#Port<0.4120>,ranch_tcp,keepalive,<0.1956.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},56507},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"179">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"content-type">>,{<<"application">>,<<"json">>,[]}},
+           {<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined},{state,[]})
+(<0.1956.0>) call rest_handler:encoded_body({http_req,#Port<0.4120>,ranch_tcp,keepalive,<0.1956.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},56507},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"179">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"content-type">>,{<<"application">>,<<"json">>,[]}},
+           {<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined})
+(<0.1956.0>) returned from rest_handler:encoded_body/1 -> {invalid,
+                                                           "invalid json"}
+(<0.1956.0>) call rest_handler:update_response({invalid,"invalid json"},{http_req,#Port<0.4120>,ranch_tcp,keepalive,<0.1956.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},56507},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"179">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"content-type">>,{<<"application">>,<<"json">>,[]}},
+           {<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined})
+(<0.1956.0>) call rest_handler:update_response({bad_request,<<"\"invalid json\"">>},{http_req,#Port<0.4120>,ranch_tcp,keepalive,<0.1956.0>,<<"POST">>,'HTTP/1.1',
+          {{127,0,0,1},56507},
+          <<"127.0.0.1">>,undefined,8080,<<"/api/influxdb">>,undefined,<<>>,
+          undefined,[],
+          [{<<"host">>,<<"127.0.0.1:8080">>},
+           {<<"connection">>,<<"keep-alive">>},
+           {<<"content-length">>,<<"179">>},
+           {<<"cache-control">>,<<"no-cache">>},
+           {<<"origin">>,
+            <<"chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop">>},
+           {<<"content-type">>,<<"application/json">>},
+           {<<"user-agent">>,
+            <<"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36">>},
+           {<<"postman-token">>,<<"e7f49a6c-2238-2e8c-5192-058a33bdeabc">>},
+           {<<"accept">>,<<"*/*">>},
+           {<<"accept-encoding">>,<<"gzip, deflate">>},
+           {<<"accept-language">>,<<"en-GB,en-US;q=0.8,en;q=0.6,ru;q=0.4">>}],
+          [{<<"content-type">>,{<<"application">>,<<"json">>,[]}},
+           {<<"if-modified-since">>,undefined},
+           {<<"if-none-match">>,undefined},
+           {<<"if-unmodified-since">>,undefined},
+           {<<"if-match">>,undefined},
+           {<<"accept">>,[{{<<"*">>,<<"*">>,[]},1000,[]}]},
+           {<<"connection">>,[<<"keep-alive">>]}],
+          undefined,
+          [{media_type,{<<"text">>,<<"html">>,[]}},{charset,undefined}],
+          waiting,
+          <<"{values:\n[{\n    \"name\": \"plc2\",\n    \"value\": 133\n},\n{\n    \"name\": \"plc4\",\n    \"value\": 57\n},\n{\n    \"name\": \"plc54\",\n    \"value\": 57\n},\n{\n    \"name\": \"test15\",\n    \"value\": 59\n}]\n}">>,
+          undefined,false,waiting,
+          [{<<"content-type">>,[<<"text">>,<<"/">>,<<"html">>,<<>>]}],
+          <<>>,undefined})
+(<0.1956.0>) exception_from {rest_handler,update_response,2} {error,badarg}
+(<0.1956.0>) exception_from {rest_handler,update_response,2} {error,badarg}
+(<0.1956.0>) exception_from {rest_handler,post_json,2} {error,badarg}
+
+(rest_influxdb@127.0.0.1)4> L = { valu    "values": [{ name:       "name": "test", v "value": 53 }[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C][C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C }[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.
+* 8: illegal expression
+(rest_influxdb@127.0.0.1)5>                             (rest_influxdb@127.0.0.1)5> L = { "values": [{ "name": "test", "value": 53 }] }.
+* 1: illegal expression
+(rest_influxdb@127.0.0.1)6>                             (rest_influxdb@127.0.0.1)6> L = { "values": [{ "name": "test", "value": 53 }] }.1 = { "values": [{ "name": "test", "value": 53 }] }.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+* 1: illegal expression
+(rest_influxdb@127.0.0.1)7>                             (rest_influxdb@127.0.0.1)7> L1 = { "values": [{ "name": "test", "value": 53 }] }. , "value": 53 }] }.}, "value": 53 }] }.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl, "value": 53 }] }.l, "value": 53 }] }., "value": 53 }] }. , "value": 53 }] }. [C[C[C{"value": 53 }] }.[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+* 1: illegal expression
+(rest_influxdb@127.0.0.1)8>                             (rest_influxdb@127.0.0.1)8> L1 = { "values": [{ "name": "test" }, {"value": 53 }] }., {"value": 53 }] }. [C[C[C"value": 53 }] }. [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+* 1: illegal expression
+(rest_influxdb@127.0.0.1)9> L = { name    "name": "test", "value": 53 }
