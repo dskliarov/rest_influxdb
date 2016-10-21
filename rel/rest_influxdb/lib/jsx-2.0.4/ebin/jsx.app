@@ -1,4 +1,4 @@
-%% app generated at {2016,3,17} {22,26,55}
+%% app generated at {2016,3,17} {22,32,39}
 {application,jsx,
              [{description,"a streaming, evented json parsing toolkit"},
               {vsn,"2.0.4"},

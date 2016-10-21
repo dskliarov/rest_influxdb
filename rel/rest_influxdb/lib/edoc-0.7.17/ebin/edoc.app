@@ -1,4 +1,4 @@
-%% app generated at {2016,3,17} {22,26,55}
+%% app generated at {2016,3,17} {22,31,3}
 {application,edoc,
              [{description,"EDoc"},
               {vsn,"0.7.17"},

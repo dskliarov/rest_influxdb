@@ -1,4 +1,4 @@
-%% app generated at {2016,3,17} {22,26,55}
+%% app generated at {2016,3,17} {22,32,39}
 {application,idna,
              [{description,"A pure Erlang IDNA implementation"},
               {vsn,"1.1.0"},
