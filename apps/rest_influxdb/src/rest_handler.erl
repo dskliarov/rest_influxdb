@@ -87,11 +87,18 @@ update_response({Resp, Message}, Request) ->
         undefined ->
             cowboy_req:reply(500, Request);
         _ ->
-            BinaryMessage = list_to_binary(Message),
+            BinaryMessage = to_binary(Message),
             EncodedMessage = jsx:encode(BinaryMessage),
             Request1 = cowboy_req:set_resp_body(EncodedMessage,Request),
             cowboy_req:reply(R, Request1)
     end.
+
+to_binary(M) when is_binary(M) ->
+    M;
+to_binary(M) when is_list(M) ->
+    list_to_binary(M);
+to_binary(M) ->
+    term_to_binary(M).
 
 encoded_body(Req) ->
     {ok,Body,_Req1} = cowboy_req:body(Req),

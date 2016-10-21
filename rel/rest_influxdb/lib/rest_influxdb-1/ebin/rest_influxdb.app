@@ -1,4 +1,4 @@
-%% app generated at {2016,3,17} {22,32,40}
+%% app generated at {2016,10,21} {18,20,22}
 {application,rest_influxdb,
              [{description,[]},
               {vsn,"1"},
