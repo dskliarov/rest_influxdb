@@ -96,7 +96,7 @@ handle_call(_Request, _From, State) ->
 %% @end
 %%--------------------------------------------------------------------
 handle_cast({write_to_db,Dps},#state{ uri = Uri } = State) ->
-    lists:foreach(fun(M) -> post_value(M,Uri) end, Dps),
+    spawn(fun() -> lists:foreach(fun(M) -> post_value(M,Uri) end, Dps) end),
     {noreply, State};
 handle_cast(_Msg, State) ->
         {noreply, State}.
