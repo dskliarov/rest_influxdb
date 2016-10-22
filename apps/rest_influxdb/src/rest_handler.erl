@@ -100,11 +100,17 @@ to_binary(M) when is_list(M) ->
 to_binary(M) ->
     term_to_binary(M).
 
+normalize_body({value, Body}) ->
+    Body;
+normalize_body(Body) ->
+    Body.
+
 encoded_body(Req) ->
     {ok,Body,_Req1} = cowboy_req:body(Req),
-    case jsx:is_json(Body) of
+    Body1 = normalize_body(Body),
+    case jsx:is_json(Body1) of
         true ->
-            {ok,jsx:decode(Body)};
+            {ok,jsx:decode(Body1)};
         _ ->
             {invalid, "invalid json"}
         end.
