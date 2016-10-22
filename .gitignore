@@ -1,2 +1,3 @@
 deps
 rel
+rel/rest_influxdb
