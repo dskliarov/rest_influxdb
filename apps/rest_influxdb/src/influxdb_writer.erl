@@ -147,9 +147,14 @@ value_to_binary(<<>>) ->
 value_to_binary(V) ->
     term_to_binary(V).
 
+check_result({_, 204,_,_}=Rslt, _Body) ->
+    lager:info("DB write result is ~p", [Rslt]);
+check_result(Rslt, Body) ->
+    lager:info("DB write result is ~p, Body ~p", [Rslt, jsx:decode(Body)]).
+
 post_value(Metric,Uri) ->
     Name = proplists:get_value(<<"name">>, Metric),
     Value = value_to_binary(proplists:get_value(<<"value">>, Metric)),
     Body = <<Name/binary, <<" value=">>/binary, Value/binary>>,
     Rslt = hackney:post(Uri,[],Body,[{pool, default}, {connection_timeout, 500}]),
-    lager:info("DB write result is ~p", [Rslt]).
+    check_result(Rslt, Body).
