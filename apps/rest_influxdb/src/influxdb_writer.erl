@@ -150,7 +150,7 @@ value_to_binary(V) ->
 check_result({_, 204,_,_}=Rslt, _Body) ->
     lager:info("DB write result is ~p", [Rslt]);
 check_result(Rslt, Body) ->
-    lager:info("DB write result is ~p, Body ~p", [Rslt, jsx:decode(Body)]).
+    lager:info("DB write result is ~p, Body ~p", [Rslt, Body]).
 
 post_value(Metric,Uri) ->
     Name = proplists:get_value(<<"name">>, Metric),
