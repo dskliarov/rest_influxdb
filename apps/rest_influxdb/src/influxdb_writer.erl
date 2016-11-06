@@ -143,7 +143,7 @@ code_change(_OldVsn, State, _Extra) ->
 %%% Internal functions
 %%%===================================================================
 value_to_binary(<<>>) ->
-    <<>>;
+    <<0>>;
 value_to_binary(V) ->
     term_to_binary(V).
 
