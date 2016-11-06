@@ -151,5 +151,5 @@ post_value(Metric,Uri) ->
     Name = proplists:get_value(<<"name">>, Metric),
     Value = value_to_binary(proplists:get_value(<<"value">>, Metric)),
     Body = <<Name/binary, <<" value=">>/binary, Value/binary>>,
-    Rslt = hackney:post(Uri,[],Body,[{pool, default}]),
+    Rslt = hackney:post(Uri,[],Body,[{pool, default}, {connection_timeout, 500}]),
     lager:info("DB write result is ~p", [Rslt]).
