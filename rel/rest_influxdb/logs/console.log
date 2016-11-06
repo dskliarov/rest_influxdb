@@ -25,3 +25,4 @@
 2016-03-17 22:28:21.773 [info] <0.1498.0>@influxdb_writer:post_value:151 DB write result is {ok,404,[{<<"server">>,<<"Cowboy">>},{<<"date">>,<<"Fri, 18 Mar 2016 02:28:21 GMT">>},{<<"content-length">>,<<"0">>}],#Ref<0.0.8.215>}
 2016-03-17 22:28:21.774 [info] <0.1498.0>@influxdb_writer:post_value:151 DB write result is {ok,404,[{<<"server">>,<<"Cowboy">>},{<<"date">>,<<"Fri, 18 Mar 2016 02:28:21 GMT">>},{<<"content-length">>,<<"0">>}],#Ref<0.0.8.228>}
 2016-10-21 20:23:35.829 [info] <0.1058.0> Application lager started on node 'rest_influxdb@127.0.0.1'
+2016-11-06 16:16:08.658 [info] <0.1059.0> Application lager started on node 'rest_influxdb@127.0.0.1'

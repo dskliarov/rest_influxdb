@@ -1,8 +1,8 @@
-run_erl [85033] Thu Mar 17 22:27:03 2016
+run_erl [13360] Sun Nov  6 16:16:07 2016
 Args before exec of shell:
-run_erl [85033] Thu Mar 17 22:27:03 2016
+run_erl [13360] Sun Nov  6 16:16:07 2016
 argv[0] = sh
-run_erl [85033] Thu Mar 17 22:27:03 2016
+run_erl [13360] Sun Nov  6 16:16:07 2016
 argv[1] = -c
-run_erl [85033] Thu Mar 17 22:27:03 2016
+run_erl [13360] Sun Nov  6 16:16:07 2016
 argv[2] = exec /Users/dskliarov/erlang_projects/rest_influxdb/rel/rest_influxdb/bin/rest_influxdb console '' 

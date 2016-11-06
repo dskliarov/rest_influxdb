@@ -1,4 +1,4 @@
-%% app generated at {2016,10,21} {18,20,22}
+%% app generated at {2016,11,6} {16,15,52}
 {application,recon,
              [{description,"Diagnostic tools for production use"},
               {vsn,"2.2.2"},
